@@ -1785,6 +1785,7 @@ ul.list-d {
 .fw-table {
   display: table;
   width: 100%;
+  position: relative;
 }
 
 .goals h2 {
