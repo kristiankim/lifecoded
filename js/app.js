@@ -60,3 +60,16 @@ $('nav a, .tagline a').click(function(event) {
 particlesJS.load('particles-js', 'particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
+
+particlesJS.load('particles-js-2', 'particles-2.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
+particlesJS.load('particles-js-3', 'particles-3.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
+particlesJS.load('particles-js-4', 'particles-4.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
