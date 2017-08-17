@@ -1884,7 +1884,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 #particles-js, #particles-js-2, #particles-js-3, #particles-js-4 {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #020817;
   background-image: url('');
   background-size: cover;
