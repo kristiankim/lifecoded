@@ -55,3 +55,8 @@ $('nav a, .tagline a').click(function(event) {
 
 
 })(jQuery)
+
+// Particle JS
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});

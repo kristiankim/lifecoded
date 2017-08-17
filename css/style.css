@@ -86,6 +86,42 @@ header, footer, nav, section, article, hgroup, figure {
 /*------------------------------------*\
     $GLOBAL ELEMENTS
 \*------------------------------------*/
+
+/*------------------------------------*\
+    $WEBFONT DELACATIONS
+\*------------------------------------*/
+
+/* Akkurat Reg */
+@font-face {font-family: "Akkurat";
+  src: url("../fonts/cf3327022417d4ff7f54f0963c4f41ea.eot"); /* IE9*/
+  src: url("../fonts/cf3327022417d4ff7f54f0963c4f41ea.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/cf3327022417d4ff7f54f0963c4f41ea.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/cf3327022417d4ff7f54f0963c4f41ea.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/cf3327022417d4ff7f54f0963c4f41ea.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/cf3327022417d4ff7f54f0963c4f41ea.svg#Akkurat") format("svg"); /* iOS 4.1- */
+}
+
+/* Akkurat Bold */
+@font-face {font-family: "Akkurat-Bold";
+  src: url("../fonts/cc4c7e3aa2ab2258b5e0bc946be1093a.eot"); /* IE9*/
+  src: url("../fonts/cc4c7e3aa2ab2258b5e0bc946be1093a.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/cc4c7e3aa2ab2258b5e0bc946be1093a.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/cc4c7e3aa2ab2258b5e0bc946be1093a.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/cc4c7e3aa2ab2258b5e0bc946be1093a.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/cc4c7e3aa2ab2258b5e0bc946be1093a.svg#Akkurat-Bold") format("svg"); /* iOS 4.1- */
+}
+
+/* Akkurat Light */
+@font-face {font-family: "Akkurat-Light";
+  src: url("../fonts/bc9fa02b4227255be2387a7e19a3e09b.eot"); /* IE9*/
+  src: url("../fonts/bc9fa02b4227255be2387a7e19a3e09b.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/bc9fa02b4227255be2387a7e19a3e09b.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/bc9fa02b4227255be2387a7e19a3e09b.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/bc9fa02b4227255be2387a7e19a3e09b.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/bc9fa02b4227255be2387a7e19a3e09b.svg#Akkurat-Light") format("svg"); /* iOS 4.1- */
+}
+
+
 /*------------------------------------*\
     $GLOBAL CLASSES
 \*------------------------------------*/
@@ -144,6 +180,7 @@ header, footer, nav, section, article, hgroup, figure {
 @media all and (max-width: 46.8em) {
   .hide-small {
     display: none; } }
+}
 
 @media all and (min-width: 46.8em) and (max-width: 50em) {
   .hide-med {
@@ -170,8 +207,11 @@ header, footer, nav, section, article, hgroup, figure {
 
 body {
   background: #fff;
-  font: 100%/1.5 "Circular", "Helvetica", "Arial", sans-serif;
+  font: 100%/1.5 "Akkurat", "Helvetica", "Arial", sans-serif;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
   color: #424755; }
 
 /* Links */
@@ -199,8 +239,11 @@ h3, .gamma {
 
 /* Subheadings */
 .subheading {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-weight: normal; }
+  font-family: "Akkurat", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
 
 /* Text-Related Elements */
 p {
@@ -466,7 +509,7 @@ td {
 .products {
   background-color: white;
   padding-bottom: 0; }
-  .products p, .products h2 {
+  .products p, .products h2, .products h3 {
     color: #fff; }
   .products h2:after {
     content: '';
@@ -501,10 +544,12 @@ td {
     background-repeat: no-repeat;
     background-position: center; }
   .products .text-box {
-    max-width: 30%;
-    padding: 4em 1em 0; }
+    padding: 4em 1em 0;
+    max-width: 50%;}
   .product-image {
-    max-width: 60%;
+    padding: 4em 0;
+    width: 100%;
+    display: block;
   }
 
   .product
@@ -515,9 +560,8 @@ td {
 
 .fw {
   position: relative;
-  display: flex;
   width: 100%;
-  padding: 8em 0;
+  padding: 4em 0;
 }
 
 .fw .lc {
@@ -561,7 +605,7 @@ td {
 }
 
 .hiring {
-  background-color: rgba(255,255,255,0.9); }
+  background-color: rgba(255,255,255,1); }
 
 .job-list ul.job-list {
   text-align: center;
@@ -848,9 +892,9 @@ td {
   background-color: #274055;
 }
 
-
-
-
+.blueblack {
+  background-color: #020817;
+}
 
 
 video#vidbg {
@@ -887,7 +931,7 @@ video#vidbg {
 .logo {
   float: left;
   max-width: 8rem;
-  margin: 0.4rem; }
+  margin: 0 0.4rem; }
   @media all and (min-width: 46.8em) {
     .logo {
       max-width: 9rem; } }
@@ -950,7 +994,7 @@ video#vidbg {
   max-height: 0; }
   .nav a {
     display: block;
-    padding: 1em;
+    padding: 0.4em 1em;
     border-top: 1px solid #eee; }
   .nav.active {
     max-height: 40em; }
@@ -989,7 +1033,7 @@ video#vidbg {
 .sticky_h {
   position: fixed;
   top: 0px;
-  max-height: 70px;
+  max-height: 50px;
   z-index: 1;
   width: 100%;
   background-color: white;
@@ -1315,6 +1359,13 @@ video#vidbg {
   .btn-w:hover, .btn-w:focus {
     background: #fff;
     color: #000; }
+
+.btn-p {
+  color: #8695DA;
+  border-color: #8695DA; }
+  .btn-p:hover, .btn-p:focus {
+    background: #8695DA;
+    color: #fff; }
 
 .rounded {
   border-radius: 30px;
@@ -1732,18 +1783,20 @@ ul.list-d {
     $GOALS
 \*------------------------------------*/
 .fw-table {
-  text-align: center;
   display: table;
   width: 100%;
 }
 
 .goals h2 {
-  font-weight: 300;
-  color: #000;
+  font-size: 3em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1em;
 }
 
-.goals h2.white-text {
-  color: #fff;
+.goal-number {
+  margin-top: 1em;
+  font-size: 30pt;
 }
 
 .fh {
@@ -1753,6 +1806,21 @@ ul.list-d {
 .ver-c {
   display: table-cell;
   vertical-align: middle;
+}
+
+.goals p {
+  max-width: 50%;
+  color: #fff;
+}
+
+.goals p:before {
+  content: '';
+    width: 100px;
+    height: 10px;
+    display: block;
+    background-color: #fff;
+    margin-bottom: 2em;
+    position: relative;
 }
 
 .goal-1 {
@@ -1773,4 +1841,48 @@ ul.list-d {
 .goal-4 {
   background-image: url(../images/particle-bg2.png);
   background-size: cover;
+}
+
+.is-rotated {
+  /* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+.pink {
+  color: #FF3366
+}
+
+.cyan {
+  color: #6BE7DE;
+}
+
+.orange {
+  color: #F2AF2C;
+}
+
+.green {
+  color: #7ED321;
+}
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #020817;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
