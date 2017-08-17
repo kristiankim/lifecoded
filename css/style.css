@@ -1796,7 +1796,8 @@ ul.list-d {
 
 .goal-number {
   margin-top: 1em;
-  font-size: 30pt;
+  font-size: 24pt;
+  position: absolute;
 }
 
 .fh {
@@ -1804,8 +1805,8 @@ ul.list-d {
 }
 
 .ver-c {
-  display: table-cell;
-  vertical-align: middle;
+  position: absolute;
+  padding-top: 14em;
 }
 
 .goals p {
