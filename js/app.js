@@ -57,19 +57,19 @@ $('nav a, .tagline a').click(function(event) {
 })(jQuery)
 
 // Particle JS
-particlesJS.load('particles-js', 'particles.json', function() {
+particlesJS.load('particles-js', 'particlesjs-1.json', function() {
   console.log('callback - particles.js config loaded');
 });
 
-particlesJS.load('particles-js-2', 'particles-2.json', function() {
+particlesJS.load('particles-js-2', 'particlesjs-2.json', function() {
   console.log('callback - particles.js config loaded');
 });
 
-particlesJS.load('particles-js-3', 'particles-3.json', function() {
+particlesJS.load('particles-js-3', 'particlesjs-3.json', function() {
   console.log('callback - particles.js config loaded');
 });
 
-particlesJS.load('particles-js-4', 'particles-4.json', function() {
+particlesJS.load('particles-js-4', 'particlesjs-4.json', function() {
   console.log('callback - particles.js config loaded');
 });
 
