@@ -962,7 +962,7 @@ video#vidbg {
 .tagline {
   display: block;
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-animation-duration: 2s;
