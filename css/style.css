@@ -14,7 +14,6 @@ Pattern Lab doesn't have any CSS requirements, which means you can write your st
 You can use Sass, Less, vanilla CSS, or some other crazy thing I haven't heard of yet.
 So please don't use these styles. They're just here to put together the demo, and nothing more.
 They're intentionally gray, boring, and crappy because you're supposed to do this stuff yourself.
-
 Atomic design is philosophically complimentary with these CSS approaches:
 
 * SMACSS by Jonathan Snook http://smacss.com/
@@ -507,24 +506,43 @@ td {
       display:none; } }
 
 .products {
-  background-color: white;
-  padding-bottom: 0; }
-  .products p, .products h2, .products h3 {
+  padding-bottom: 0;}
+  .products p, .products h1, .products h2, .products h3 {
     color: #fff; }
-  .products h2:after {
-    content: '';
-    margin: 1em 0;
-    width: 3em;
-    height: 5px;
-    background-color: #fff;
-    display: block; }
-  .products h1 {
-    margin-bottom: 1em; }
+  // .products h1:after {
+  //   content: '';
+  //   margin: 0.7em 0;
+  //   width: 3em;
+  //   height: 5px;
+  //   background-color: #fff;
+  //   display: block; }
   .products span {
     font-weight: normal;
     font-style: italic;
     color: #BDC6CF;
     font-size: 0.75em; }
+  .products .product_title {
+    margin-bottom: 2em;
+  }
+  .products h1 {
+    margin-bottom: 1em;
+  }
+  .products p {
+    font-size: 2em;
+  }
+  .products a {
+    color: #0074D9;
+    text-decoration: underline;
+  }
+  .products a:hover {
+    color: #fff;
+  }
+  .product_title h1 {
+    font-size: 4em;
+  }
+  .gray_f {
+    opacity: 0.3;
+  }
   .products .flex-grid {
     display: flex;
     display: -webkit-flex;
@@ -551,8 +569,9 @@ td {
     width: 100%;
     display: block;
   }
-
-  .product
+  .products .product_logo {
+    width: 300px;
+  }
 
   .product-image img {
     display: block;
@@ -587,6 +606,10 @@ td {
 
 .over-margin-r {
   margin-right: -4em; }
+
+.over-margin-b {
+  margin-bottom: 4em;
+}
 
 .low-z {
   position: relative;
@@ -632,10 +655,15 @@ td {
 }
 
 .about_us {
-  //background: url(../images/about_bg.svg) no-repeat bottom right;
-  background: url(../images/about_bg.jpg) no-repeat;
-  background-position: center;
-  background-size: cover;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.about_us h2 {
+  color: #fff;
+  font-size: 3em;
+  line-height: 1.5em;
 }
 
 .hiring h1 {
@@ -968,7 +996,8 @@ video#vidbg {
   -moz-animation-duration: 2s;
   -webkit-animation-duration: 2s; }
   .tagline h1 {
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 2em; }
   .tagline p {
     max-width: 37.5em;
     color: #fff;
