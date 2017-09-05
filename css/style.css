@@ -1119,8 +1119,8 @@ video#vidbg {
 .footer {
   clear: both;
   overflow: hidden;
-  background: RGBA(51, 59, 66, 1.00);
-  color: #fff;
+  background: #fff;
+  color: #000;
   line-height: 1.2; }
   .footer h1 {
     color: #B8E986;
@@ -1132,8 +1132,6 @@ video#vidbg {
 
   .footer .g {
     padding: 1em 0; }
-  .footer a {
-    color: #BDC6CF; }
   .footer small {
     color: #9B9B9B;
     padding-left: 0;}
@@ -1154,7 +1152,7 @@ video#vidbg {
 .footer i {
   margin-right: 1em;}
 .footer a {
-  color: #fff; }
+  color: #000; }
 
 /* Social List */
 .social-list li {
@@ -1168,6 +1166,10 @@ video#vidbg {
 
 .footer .icons {
   margin-top: 1em;
+}
+
+.ti-linkedin {
+  color: #0084BF;
 }
 
 .footer .icons, .footer .company-info {
@@ -1185,12 +1187,12 @@ video#vidbg {
       }
 
 .footer .company-info li {
-  color: RGBA(255, 255, 255, 0.5);
+  color: RGBA(0, 0, 0, 0.5);
   font-size: 0.75em;
   margin-bottom: 0.5em;
 }
 .footer .company-info li a {
-  color: RGBA(255, 255, 255, 0.5);
+  color: RGBA(0, 0, 0, 0.5);
 }
 
 .nav-footer {
@@ -1209,7 +1211,7 @@ video#vidbg {
 .copyright {
   font-size: 0.75em;
   padding: 1em 0;
-  color: RGBA(255, 255, 255, 0.5);
+  color: RGBA(0, 0, 0, 0.5);
   float: left;
   clear: both;
   border-top: 1px solid #4a4a4a; }
