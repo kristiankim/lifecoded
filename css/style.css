@@ -654,7 +654,7 @@ td {
   width: 288px;
 }
 
-.about_us {
+.about_us, .about_us_2, .gallery {
   display: flex;
   height: 100vh;
   align-items: center;
@@ -664,6 +664,13 @@ td {
   color: #fff;
   font-size: 3em;
   line-height: 1.5em;
+}
+
+.about_us_2 h2 {
+  font-size: 2em;
+  line-height: 1.5em;
+  color: #000;
+  font-weight: 300;
 }
 
 .hiring h1 {
@@ -922,6 +929,10 @@ td {
 
 .blueblack {
   background-color: #020817;
+}
+
+.clean-white {
+  background-color: #fff;
 }
 
 
