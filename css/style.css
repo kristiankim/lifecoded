@@ -1020,9 +1020,9 @@ video#vidbg {
   -webkit-transform: translateY(-50%);
   -moz-animation-duration: 2s;
   -webkit-animation-duration: 2s; }
-  .tagline h1 {
+  .tagline h1, h2 {
     color: #fff;
-    margin-bottom: 2em; }
+    margin-bottom: 1.3em; }
   .tagline p {
     max-width: 37.5em;
     color: #fff;
@@ -1036,7 +1036,7 @@ video#vidbg {
     height: 10px;
     display: block;
     background-color: #fff;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
     position: relative; }
 
 /*------------------------------------*\
@@ -1247,8 +1247,13 @@ video#vidbg {
 /*------------------------------------*\
     $TEXT Styles
 \*------------------------------------*/
-.intro {
-  font-size: 1.8em; }
+h1.intro {
+  font-size: 2em; }
+h2.intro_h2 {
+  font-size: 1.8em;
+  font-weight: 300;
+}
+
 
 .pullquote {
   font-family: Georgia, Times, "Times New Roman", serif;
