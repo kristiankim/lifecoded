@@ -1417,10 +1417,10 @@ video#vidbg {
     color: #000; }
 
 .btn-p {
-  color: #8695DA;
-  border-color: #8695DA; }
+  color: #3E86FB;
+  border-color: #3E86FB; }
   .btn-p:hover, .btn-p:focus {
-    background: #8695DA;
+    background: #3E86FB;
     color: #fff; }
 
 .rounded {
