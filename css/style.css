@@ -527,6 +527,9 @@ td {
   .products h1 {
     margin-bottom: 1em;
   }
+  .products h3 {
+    font-size: 3em;
+  }
   .products p {
     font-size: 2em;
   }
@@ -546,8 +549,11 @@ td {
   .products .flex-grid {
     display: flex;
     display: -webkit-flex;
-    flex-direction: column;
+    flex-direction: row;
     vertical-align: top; }
+  .products .products_grid {
+    margin-top: 100px;
+  }
   .products .gi {
     padding: 0;
     height: 490px;
@@ -570,7 +576,7 @@ td {
     display: block;
   }
   .products .product_logo {
-    width: 300px;
+    height: 120px;
   }
 
   .product-image img {
@@ -1126,8 +1132,8 @@ video#vidbg {
   padding-top: 7px;
 }
 
-.sticky_h nav ul {
-
+.sticky_h img.logo {
+  padding-top: 10px;
 }
 
 
