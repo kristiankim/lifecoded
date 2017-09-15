@@ -547,6 +547,12 @@ td {
   .products p {
     font-size: 2em;
   }
+
+  @media all and (max-width: 46.8em) {
+  .products p{
+  font-size: 1.675em;
+    }
+  }
   .products a {
     color: #0074D9;
     text-decoration: underline;
@@ -696,7 +702,7 @@ td {
 
 @media all and (max-width: 46.8em) {
       .job-list li {
-        margin: 1em 0; }}
+        margin: 0.7em 0; }}
 
 .job-list li .btn-w {
   width: 288px;
@@ -1100,6 +1106,9 @@ video#vidbg {
     color: #fff;
     margin-top: 1em;}
     @media all and (max-width: 39.8em) {
+      .tagline {
+        top: 30%;
+      }
       .tagline h1.intro {
         font-size: 1.675em;
         line-height: 1.4em;}
@@ -1949,6 +1958,12 @@ ul.list-d {
   max-width: 50%;
   color: #fff;
 }
+
+@media all and (max-width: 46.8em) {
+  .goals p {
+  max-width: 80%;
+    }
+  }
 
 .goals p.top_bar:before {
   content: '';
