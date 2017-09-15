@@ -469,7 +469,7 @@ td {
   padding: 1em; }
   @media all and (max-width: 48em) {
     .lc, .header, [role=main] {
-      padding: 0 2em; } }
+      padding: 0 1.4em; } }
   .lc .small, .header .small, [role=main] .small {
     max-width: 47.5em;
     padding: 2em;
@@ -1055,6 +1055,11 @@ video#vidbg {
   @media all and (min-width: 46.8em) {
     .logo {
       max-width: 9rem; } }
+  @media all and (max-width: 39.8em)  {
+    .logo {
+      padding-top: 1em;
+    }
+  }
 
 .nav-toggle {
   float: right;
