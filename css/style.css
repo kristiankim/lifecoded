@@ -527,9 +527,23 @@ td {
   .products h1 {
     margin-bottom: 1em;
   }
-  .products h3 {
+
+  @media all and (max-width: 46.8em) {
+  .products h1  {
+    font-size: 2em;
+    }
+  }
+
+
+  .products h2 {
     font-size: 3em;
   }
+  @media all and (max-width: 46.8em) {
+  .products h2 {
+  font-size: 1.8em;
+    }
+  }
+
   .products p {
     font-size: 2em;
   }
@@ -546,25 +560,41 @@ td {
   .gray_f {
     opacity: 0.3;
   }
+
+  @media all and (min-width: 46.8em) {
   .products .flex-grid {
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
     vertical-align: top; }
+  }
+  @media all and (min-width: 46.8em) {
+    .products .gi {
+      padding: 0;
+      text-align: center;
+      flex: 1 0 auto; }
+  }
+
   .products .products_grid {
     margin-top: 100px;
     padding-bottom: 100px;
   }
-  .products .gi {
-    padding: 0;
-    text-align: center;
-    flex: 1 0 auto; }
     .products .gi img {
       display: inline;
     }
+   @media all and (min-width: 46.8em) {
     .products .g-2up > .gi:nth-of-type(even) {
       border-left: 1px solid #3A3A3A;
     }
+  }
+
+  @media all and (max-width: 46.8em) {
+    .products .g-2up > .gi:nth-of-type(even) {
+      border-top: 1px solid #3A3A3A;
+      margin-top: 1em;
+      padding-top: 3em;
+    }
+  }
 
   // .products .img-box {
   //   height: 490px;
@@ -578,6 +608,12 @@ td {
   }
   .products .product_logo {
     height: 120px;
+  }
+
+  @media all and (max-width: 46.8em) {
+    .products .product_logo  {
+      height: 80px;
+      }
   }
 
   .product-image img {
@@ -658,6 +694,10 @@ td {
       .job-list li {
         margin: 0 1em 1em 1em; }}
 
+@media all and (max-width: 46.8em) {
+      .job-list li {
+        margin: 1em 0; }}
+
 .job-list li .btn-w {
   width: 288px;
 }
@@ -681,12 +721,25 @@ td {
   line-height: 1.5em;
 }
 
+@media all and (max-width: 46.8em) {
+  .about_us h2 {
+  font-size: 1.8em;
+    }
+  }
+
 .about_us_2 h2 {
   font-size: 2em;
   line-height: 1.5em;
   color: #000;
   font-weight: 300;
 }
+
+@media all and (max-width: 46.8em) {
+    .about_us_2 h2 {
+      font-size: 1.675em;
+      line-height: 1.4em;
+    }
+  }
 
 .gallery {
   display: inline-block;
@@ -697,6 +750,12 @@ td {
   color: #000;
   padding: 0.5em 0;
   margin-bottom: 0.7em;}
+@media all and (max-width: 46.8em) {
+    .hiring h1{
+      font-size: 2em;
+    }
+  }
+
 .hiring p {
   color: #000;
   margin-bottom: 1em; }
@@ -1036,8 +1095,13 @@ video#vidbg {
     color: #fff;
     margin-top: 1em;}
     @media all and (max-width: 39.8em) {
-      .tagline h1 {
-        font-size: 1.4375em; } }
+      .tagline h1.intro {
+        font-size: 1.675em;
+        line-height: 1.4em;}
+        .tagline h2.intro_h2 {
+          font-size: 1.4em;
+          line-height: 1.3em;
+          } }
   .tagline h1:before {
     content: '';
     width: 100px;
@@ -1162,9 +1226,6 @@ video#vidbg {
   .footer .gi {
     padding: 0;
   }
-
-  .footer .g {
-    padding: 1em 0; }
   .footer small {
     color: #9B9B9B;
     padding-left: 0;}
@@ -1206,25 +1267,21 @@ video#vidbg {
 }
 
 .footer .icons, .footer .company-info {
-  float: left;
-  text-align: left;
   width: 100%;
+  text-align: center;
 }
 
 @media all and (min-width: 46.8em) {
       .footer .icons, .footer .company-info {
         margin-top:0;
-        float: right;
-        width: 100%;
-        text-align: right;}
+        width: 100%;}
       }
 
-.footer .company-info li {
+.footer .company-info p {
   color: RGBA(0, 0, 0, 0.5);
-  font-size: 0.75em;
-  margin-bottom: 0.5em;
+  font-size: 0.75em;;
 }
-.footer .company-info li a {
+.footer .company-info a {
   color: RGBA(0, 0, 0, 0.5);
 }
 
@@ -1242,12 +1299,7 @@ video#vidbg {
     padding: 1em; }
 
 .copyright {
-  font-size: 0.75em;
-  padding: 1em 0;
-  color: RGBA(0, 0, 0, 0.5);
-  float: left;
-  clear: both;
-  border-top: 1px solid #4a4a4a; }
+  // border-top: 1px solid #D8D8D8; }
   @media all and (min-width: 46.8em) {
     .copyright {
       /* float: right;*/} }
@@ -1863,6 +1915,12 @@ ul.list-d {
   color: #fff;
   margin-bottom: 1em;
 }
+
+@media all and (max-width: 46.8em) {
+  .goals h2 {
+  font-size: 1.8em;
+    }
+  }
 
 .goal-number {
   margin-top: 1em;
